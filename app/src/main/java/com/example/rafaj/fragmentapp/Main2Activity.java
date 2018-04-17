@@ -8,6 +8,9 @@ import android.widget.TextView;
 
 public class Main2Activity extends AppCompatActivity {
     TextView text;
+    TextView text1;
+    TextView text2;
+
     ImageView img;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,6 +18,9 @@ public class Main2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
 
         text = findViewById(R.id.textId);
+        text1 = findViewById(R.id.textId1);
+        text2 = findViewById(R.id.textId2);
+
         img = findViewById(R.id.imgPlanet);
 
         Intent callingIntent = getIntent();
@@ -30,9 +36,12 @@ public class Main2Activity extends AppCompatActivity {
     }
 
     private void handleReceivedText(Intent intent){
-        Planets planet = (Planets)intent.getSerializableExtra("planeta");
-        if (text != null){
+        Games planet = (Games)intent.getSerializableExtra("game");
+        if (text != null && text1 != null && text2 != null ){
             text.setText(planet.getName());
+            text1.setText(planet.getYear());
+            text2.setText(planet.getType());
+
         }
         if (img != null) {
             img.setImageResource(planet.getImg());

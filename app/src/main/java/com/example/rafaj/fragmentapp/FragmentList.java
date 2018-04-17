@@ -31,7 +31,7 @@ public class FragmentList extends ListFragment implements AdapterView.OnItemClic
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         ArrayAdapter adapter = ArrayAdapter.createFromResource(getActivity(),
-                R.array.Planets, R.layout.mytextview);
+                R.array.Game, R.layout.mytextview);
         setListAdapter(adapter);
         getListView().setOnItemClickListener(this);
     }
@@ -40,18 +40,18 @@ public class FragmentList extends ListFragment implements AdapterView.OnItemClic
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
         //Toast.makeText(getActivity(), "Item: " + adapterView.getItemAtPosition(i).toString(), Toast.LENGTH_SHORT).show();
-        Planets planet = new Planets(adapterView.getItemAtPosition(i).toString(), i);
+        Games game = new Games(getResources(), i);
         if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT){
             Intent newIntent = new Intent(getActivity().getApplicationContext(), Main2Activity.class);
             newIntent.setAction(Intent.ACTION_SEND);
-            newIntent.putExtra("planeta", planet);
+            newIntent.putExtra("game", game);
             newIntent.setType("text/plain");
             startActivity(newIntent);
         }else if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){
             Toast.makeText(getActivity(), "Item: " + adapterView.getItemAtPosition(i).toString(), Toast.LENGTH_SHORT).show();
 
             Bundle bundle = new Bundle();
-            bundle.putSerializable("planeta", planet);
+            bundle.putSerializable("game", game);
 
             FragmentViewer frag = new FragmentViewer();
             frag.setArguments(bundle);

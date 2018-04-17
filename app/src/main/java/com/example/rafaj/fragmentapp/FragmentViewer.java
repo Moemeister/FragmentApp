@@ -15,6 +15,9 @@ import android.widget.Toast;
 
 public class FragmentViewer extends Fragment {
     TextView text;
+    TextView text1;
+    TextView text2;
+
     ImageView img;
 
     @Override
@@ -22,16 +25,23 @@ public class FragmentViewer extends Fragment {
         View view = inflater.inflate(R.layout.viewer_fragment, container, false);
 
         text = view.findViewById(R.id.textId);
+        text1 = view.findViewById(R.id.textId1);
+        text2 = view.findViewById(R.id.textId2);
+
+
         img = view.findViewById(R.id.imgPlanet);
 
         Bundle bundle = this.getArguments();
 
 
         if(bundle != null){
-            Planets planet = (Planets)bundle.getSerializable("planeta");
+            Games game = (Games)bundle.getSerializable("game");
             Toast.makeText(getActivity(), "Item: " + bundle.getString("KEY"), Toast.LENGTH_SHORT).show();
-            text.setText(planet.getName());
-            img.setImageResource(planet.getImg());
+            text.setText(game.getName());
+            text1.setText(game.getYear());
+            text2.setText(game.getType());
+
+            img.setImageResource(game.getImg());
         }
         return view;
     }

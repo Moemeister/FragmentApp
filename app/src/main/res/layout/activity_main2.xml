@@ -16,6 +16,23 @@
         android:id="@+id/textId"
         android:textSize="24sp"
         android:textColor="@color/white"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:id="@+id/textId1"
+        android:textSize="24sp"
+        android:textColor="@color/white"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:id="@+id/textId2"
+        android:textSize="24sp"
+        android:textColor="@color/white"/>
+
 
 
     <ImageView
