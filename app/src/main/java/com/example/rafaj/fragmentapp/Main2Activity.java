@@ -21,7 +21,7 @@ public class Main2Activity extends AppCompatActivity {
         text1 = findViewById(R.id.textId1);
         text2 = findViewById(R.id.textId2);
 
-        img = findViewById(R.id.imgPlanet);
+        img = findViewById(R.id.imgGame);
 
         Intent callingIntent = getIntent();
         String intentAction = callingIntent.getAction();

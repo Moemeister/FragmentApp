@@ -29,7 +29,7 @@ public class FragmentViewer extends Fragment {
         text2 = view.findViewById(R.id.textId2);
 
 
-        img = view.findViewById(R.id.imgPlanet);
+        img = view.findViewById(R.id.imgGame);
 
         Bundle bundle = this.getArguments();
 
