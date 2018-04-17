@@ -17,57 +17,57 @@ public class Games implements Serializable{
 
         switch (index){
             case 0:
-                img = R.drawable.sun;
+                img = R.drawable.cs;
                 name = res.getStringArray(R.array.Game)[0];
                 year = res.getStringArray(R.array.year)[2];
                 type = res.getStringArray(R.array.type)[0];
 
                 break;
             case 1:
-                img = R.drawable.mercury;
+                img = R.drawable.metorid;
                 name = res.getStringArray(R.array.Game)[1];
                 year = res.getStringArray(R.array.year)[1];
                 type = res.getStringArray(R.array.type)[1];
 
                 break;
             case 2:
-                img = R.drawable.venus;
+                img = R.drawable.cuphead;
                 name = res.getStringArray(R.array.Game)[2];
                 year = res.getStringArray(R.array.year)[1];
                 type = res.getStringArray(R.array.type)[1];
                 break;
             case 3:
-                img = R.drawable.earth;
+                img = R.drawable.hollow;
                 name = res.getStringArray(R.array.Game)[3];
                 year = res.getStringArray(R.array.year)[1];
                 type = res.getStringArray(R.array.type)[1];
                 break;
             case 4:
-                img = R.drawable.mars;
+                img = R.drawable.skyrim;
                 name = res.getStringArray(R.array.Game)[4];
                 year = res.getStringArray(R.array.year)[3];
                 type = res.getStringArray(R.array.type)[3];
                 break;
             case 5:
-                img = R.drawable.jupiter;
+                img = R.drawable.lol;
                 name = res.getStringArray(R.array.Game)[5];
                 year = res.getStringArray(R.array.year)[4];
                 type = res.getStringArray(R.array.type)[2];
                 break;
             case 6:
-                img = R.drawable.saturn;
+                img = R.drawable.fortnite;
                 name = res.getStringArray(R.array.Game)[6];
                 year = res.getStringArray(R.array.year)[1];
                 type = res.getStringArray(R.array.type)[4];
                 break;
             case 7:
-                img = R.drawable.uranus;
+                img = R.drawable.unturned;
                 name = res.getStringArray(R.array.Game)[7];
                 year = res.getStringArray(R.array.year)[5];
                 type = res.getStringArray(R.array.type)[4];
                 break;
             case 8:
-                img = R.drawable.neptune;
+                img = R.drawable.overwatch;
                 name = res.getStringArray(R.array.Game)[8];
                 year = res.getStringArray(R.array.year)[0];
                 type = res.getStringArray(R.array.type)[0];
