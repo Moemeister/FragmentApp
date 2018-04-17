@@ -16,20 +16,19 @@
         <TextView
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_marginTop="50dp"
+
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textColor="@color/white"
-            android:textSize="24sp"
+            android:textSize="12sp"
             android:text="@string/lbl_game"/>
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:layout_marginTop="50dp"
             android:id="@+id/textId"
-            android:textSize="24sp"
+            android:textSize="12sp"
             android:textColor="@color/white"/>
 
     </LinearLayout>
@@ -43,7 +42,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textColor="@color/white"
-            android:textSize="24sp"
+            android:textSize="12sp"
             android:text="@string/lbl_date"/>
         <TextView
             android:layout_width="0dp"
@@ -51,7 +50,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:id="@+id/textId1"
-            android:textSize="24sp"
+            android:textSize="12sp"
             android:textColor="@color/white"/>
 
     </LinearLayout>
@@ -65,7 +64,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textColor="@color/white"
-            android:textSize="24sp"
+            android:textSize="12sp"
             android:text="@string/lbl_genre"/>
         <TextView
             android:layout_width="0dp"
@@ -73,7 +72,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:id="@+id/textId2"
-            android:textSize="24sp"
+            android:textSize="12sp"
             android:textColor="@color/white"/>
 
     </LinearLayout>
