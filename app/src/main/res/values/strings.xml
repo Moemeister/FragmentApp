@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">FragmentApp</string>
+    <string name="lbl_game">Game:</string>
+    <string name="lbl_date">Release date:</string>
+    <string name="lbl_genre">Genre:</string>
 
     <string-array name="Game">
         <item>Counter Strike</item>
@@ -26,6 +29,5 @@
         <item>2011</item>
         <item>2009</item>
         <item>2014</item>
-        <item>2012</item>
     </string-array>
 </resources>
